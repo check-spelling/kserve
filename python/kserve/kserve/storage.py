@@ -126,7 +126,7 @@ class Storage(object):  # pylint: disable=too-few-public-methods
             # s3://test-bucket
             # Objects: /a/b/c/model.bin /a/model.bin /model.bin
             #
-            # If 'uri' is set to "s3://test-bucket", then the dowloader will
+            # If 'uri' is set to "s3://test-bucket", then the downloader will
             # download all the objects listed above, re-creating their subpaths
             # under the temp_dir.
             # If 'uri' is set to "s3://test-bucket/a", then the downloader will

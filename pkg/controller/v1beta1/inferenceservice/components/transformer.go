@@ -124,7 +124,7 @@ func (p *Transformer) Reconcile(isvc *v1beta1.InferenceService) error {
 
 		deployment, err := r.Reconcile()
 		if err != nil {
-			return errors.Wrapf(err, "fails to reoncile transformer")
+			return errors.Wrapf(err, "fails to reconcile transformer")
 		}
 		isvc.Status.PropagateRawStatus(v1beta1.TransformerComponent, deployment, r.URL)
 

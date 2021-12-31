@@ -357,6 +357,6 @@ class Storage(object):  # pylint: disable=too-few-public-methods
             archive.extractall(target_dir)
             archive.close()
         except (tarfile.TarError, zipfile.BadZipfile):
-            raise RuntimeError("Failed to unpack archieve file. \
+            raise RuntimeError("Failed to unpack archive file. \
 The file format is not valid.")
         os.remove(file_path)

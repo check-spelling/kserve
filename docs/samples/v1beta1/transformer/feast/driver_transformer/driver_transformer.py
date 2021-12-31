@@ -26,7 +26,7 @@ class DriverTransformer(kserve.Model):
 
     Args:
         kserve (class object): The Model class from the KServe
-        modeule is passed here.
+        module is passed here.
     """
     def __init__(self, name: str,
                  predictor_host: str,

@@ -90,8 +90,8 @@ const (
 	ExplainerRoutesReady apis.ConditionType = "ExplainerRoutesReady"
 	// PredictorConfigurationReady is set when predictor pods are ready.
 	PredictorConfigurationReady apis.ConditionType = "PredictorConfigurationReady"
-	// TransformerConfigurationeReady is set when transformer pods are ready.
-	TransformerConfigurationeReady apis.ConditionType = "TransformerConfigurationeReady"
+	// TransformerConfigurationReady is set when transformer pods are ready.
+	TransformerConfigurationReady apis.ConditionType = "TransformerConfigurationReady"
 	// ExplainerConfigurationReady is set when explainer pods are ready.
 	ExplainerConfigurationReady apis.ConditionType = "ExplainerConfigurationReady"
 	// PredictorReady is set when predictor has reported readiness.
@@ -119,7 +119,7 @@ var routeConditionsMap = map[ComponentType]apis.ConditionType{
 var configurationConditionsMap = map[ComponentType]apis.ConditionType{
 	PredictorComponent:   PredictorConfigurationReady,
 	ExplainerComponent:   ExplainerConfigurationReady,
-	TransformerComponent: TransformerConfigurationeReady,
+	TransformerComponent: TransformerConfigurationReady,
 }
 
 // InferenceService Ready condition is depending on predictor and route readiness condition

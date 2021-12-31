@@ -233,7 +233,7 @@ def patch_service_account(secret_name, namespace, sa_name):
         raise RuntimeError(
             "Exception when calling CoreV1Api->patch_namespaced_service_account: %s\n" % e)
 
-    logger.info('Pacthed Service account: %s in namespace %s', sa_name, namespace)
+    logger.info('Patched Service account: %s in namespace %s', sa_name, namespace)
 
 
 def get_creds_name_from_config_map(creds):

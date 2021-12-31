@@ -78,7 +78,7 @@ class DriverTransformer(kserve.Model):
         return entity_rows
 
     def buildPredictRequest(self, inputs, features) -> Dict:
-        """Build the predict request for all entitys and return it as a dict.
+        """Build the predict request for all entities and return it as a dict.
 
         Args:
             inputs (Dict): entity ids from http request

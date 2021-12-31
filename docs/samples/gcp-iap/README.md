@@ -115,7 +115,7 @@ gcloud projects add-iam-policy-binding $PROJECT \
 Follow the instruction in [make-prediction.sh](./make-prediction.sh) to download service account key [key.json] and [iap_request.py](https://github.com/kubeflow/kubeflow/blob/master/docs/gke/iap_request.py) script to current folder. Continue with the instruction to set parameters in [make-prediction.sh](./make-prediction.sh). This file explains the parameters required by iap_request.py. Finally, run command:
 
 ```
-bash make-predicition.sh
+bash make-prediction.sh
 ```
 
 If request is successful, you can see response like:
@@ -148,7 +148,7 @@ Exception: Service account <service-account>@<project>.iam.gserviceaccount.com d
 Below is an example of accessing inference service from outside of cluster using user account when authorization is enabled. For more guide on authenticating with IAP, refer to [Programmatic Authentication](https://cloud.google.com/iap/docs/authentication-howto).
 
 
-Set the parameters in [`make-prediction-auth.sh`](./make-prediciton-auth.sh), pair the instruction in bash script and [Authenticating from a desktop app](https://cloud.google.com/iap/docs/authentication-howto#authenticating_from_a_desktop_app) to understand the process. This bash script calls [iap_request_auth.py](./iap_request_auth.py), which is an altered version of authentication request script from [KFP SDK auth script](https://github.com/kubeflow/pipelines/blob/master/sdk/python/kfp/_auth.py).
+Set the parameters in [`make-prediction-auth.sh`](./make-prediction-auth.sh), pair the instruction in bash script and [Authenticating from a desktop app](https://cloud.google.com/iap/docs/authentication-howto#authenticating_from_a_desktop_app) to understand the process. This bash script calls [iap_request_auth.py](./iap_request_auth.py), which is an altered version of authentication request script from [KFP SDK auth script](https://github.com/kubeflow/pipelines/blob/master/sdk/python/kfp/_auth.py).
 
 Make request to sidecar injected inference service using command:
 

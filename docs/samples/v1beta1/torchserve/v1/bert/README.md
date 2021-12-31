@@ -74,7 +74,7 @@ In order to understand the word importances and attributions when we make an exp
 MODEL_NAME=torchserve-bert
 SERVICE_HOSTNAME=$(kubectl get inferenceservice ${MODEL_NAME} -n <namespace> -o jsonpath='{.status.url}' | cut -d "/" -f 3)
 
-curl -v -H "Host: ${SERVICE_HOSTNAME}" http://${INGRESS_HOST}:${INGRESS_PORT}/v1/models/BERTSeqClassification:explaine -d ./sample_text.txt
+curl -v -H "Host: ${SERVICE_HOSTNAME}" http://${INGRESS_HOST}:${INGRESS_PORT}/v1/models/BERTSeqClassification:explain -d ./sample_text.txt
 ```
 Expected output
 ```bash

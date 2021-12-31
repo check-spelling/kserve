@@ -1,4 +1,4 @@
-# Example Anchors Text Explaination for Movie Sentiment
+# Example Anchors Text Explanation for Movie Sentiment
 
 This example uses a [movie sentiment dataset](http://www.cs.cornell.edu/people/pabo/movie-review-data/).
 
